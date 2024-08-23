@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_scrap_note=self.webpackChunkmy_scrap_note||[]).push([[6690],{2081:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/my-scrap-note/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

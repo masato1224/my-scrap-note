@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_scrap_note=self.webpackChunkmy_scrap_note||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/my-scrap-note/blog","blogTitle":"Blog","authorsListPath":"/my-scrap-note/blog/authors"}')}}]);
