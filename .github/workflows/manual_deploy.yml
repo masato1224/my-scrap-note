@@ -11,4 +11,7 @@ jobs:
 
   deploy:
     needs: build
+    permissions:
+      pages: write
+      id-token: write
     uses: ./.github/workflows/_deploy.yml
