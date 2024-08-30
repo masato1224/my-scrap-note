@@ -1,0 +1,15 @@
+name: Test Build
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  test_build:
+    uses: ./.github/workflows/share/_build.yml
+    with:
+      need_upload_artifact: false

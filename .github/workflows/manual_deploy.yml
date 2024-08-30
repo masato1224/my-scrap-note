@@ -1,0 +1,14 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    uses: ./.github/workflows/share/_build.yml
+    with:
+      need_upload_artifact: true
+
+  deploy:
+    needs: build
+    uses: ./.github/workflows/share/_deploy.yml
