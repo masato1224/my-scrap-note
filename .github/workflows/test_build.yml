@@ -10,6 +10,6 @@ on:
 
 jobs:
   test_build:
-    uses: ./.github/workflows/share/_build.yml
+    uses: ./.github/workflows/_build.yml
     with:
       need_upload_artifact: false

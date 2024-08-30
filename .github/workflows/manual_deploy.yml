@@ -5,10 +5,10 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/share/_build.yml
+    uses: ./.github/workflows/_build.yml
     with:
       need_upload_artifact: true
 
   deploy:
     needs: build
-    uses: ./.github/workflows/share/_deploy.yml
+    uses: ./.github/workflows/_deploy.yml
