@@ -2,8 +2,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const title = '徒然 Scrap Note';
+
 const config: Config = {
-  title: 'My Site',
+  title: title,
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -68,9 +70,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: title,
       logo: {
-        alt: 'My Site Logo',
+        alt: `${title} Logo`,
         src: 'img/logo.png',
       },
       items: [
