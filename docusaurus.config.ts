@@ -116,6 +116,10 @@ const config: Config = {
               label: 'GitHub',
               href: 'https://github.com/masato1224',
             },
+            {
+              label: 'Resume',
+              href: 'https://www.resume.id/ma310',
+            }
           ],
         },
       ],
