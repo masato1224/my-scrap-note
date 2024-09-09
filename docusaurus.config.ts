@@ -97,10 +97,14 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Scrap Note',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Tech',
+              to: '/docs/intro',
+            },
+            {
+              label: 'Other',
               to: '/docs/intro',
             },
           ],
