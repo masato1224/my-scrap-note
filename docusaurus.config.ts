@@ -75,9 +75,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docSidebar',
           position: 'left',
-          label: 'Tutorial'
+          label: 'NoteBook'
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
@@ -94,12 +94,8 @@ const config: Config = {
           title: 'Scrap Note',
           items: [
             {
-              label: 'Tech',
-              to: '/docs/intro'
-            },
-            {
-              label: 'Other',
-              to: '/docs/intro'
+              label: 'NoteBook',
+              to: '/docs/top'
             }
           ]
         },
