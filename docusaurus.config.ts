@@ -6,7 +6,7 @@ const title = '徒然 Scrap Note';
 
 const config: Config = {
   title: title,
-  tagline: 'Dinosaurs are cool',
+  tagline: '忘れそうなこと､思いついたこをとりとめもなく書きつける場所',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
