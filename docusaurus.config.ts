@@ -1,12 +1,12 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const title = '徒然 Scrap Note';
 
 const config: Config = {
   title: title,
-  tagline: 'Dinosaurs are cool',
+  tagline: '忘れそうなこと､思いついたこをとりとめもなく書きつける場所',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -24,13 +24,12 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
 
-
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ja',
+    locales: ['ja']
   },
 
   presets: [
@@ -41,29 +40,27 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/masato1224/my-scrap-note/tree/main/',
+          editUrl: 'https://github.com/masato1224/my-scrap-note/tree/main/'
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
-            xslt: true,
+            xslt: true
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/masato1224/my-scrap-note/tree/main/',
+          editUrl: 'https://github.com/masato1224/my-scrap-note/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onUntruncatedBlogPosts: 'warn'
         },
         theme: {
-          customCss: './src/css/custom.css',
-        },
-      } satisfies Preset.Options,
-    ],
+          customCss: './src/css/custom.css'
+        }
+      } satisfies Preset.Options
+    ]
   ],
 
   themeConfig: {
@@ -73,25 +70,22 @@ const config: Config = {
       title: title,
       logo: {
         alt: `${title} Logo`,
-        src: 'img/logo.png',
+        src: 'img/logo.png'
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'NoteBook'
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          type: 'docsVersionDropdown',
-        },
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/masato1224/my-scrap-note',
           label: 'GitHub',
-          position: 'right',
-        },
-      ],
+          position: 'right'
+        }
+      ]
     },
     footer: {
       style: 'dark',
@@ -100,40 +94,36 @@ const config: Config = {
           title: 'Scrap Note',
           items: [
             {
-              label: 'Tech',
-              to: '/docs/intro',
-            },
-            {
-              label: 'Other',
-              to: '/docs/intro',
-            },
-          ],
+              label: 'NoteBook',
+              to: '/docs/top'
+            }
+          ]
         },
         {
           title: 'More',
           items: [
             {
               label: 'Blog',
-              to: '/blog',
+              to: '/blog'
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/masato1224',
+              href: 'https://github.com/masato1224'
             },
             {
               label: 'Resume',
-              href: 'https://www.resume.id/ma310',
+              href: 'https://www.resume.id/ma310'
             }
-          ],
-        },
+          ]
+        }
       ],
-      copyright: `Built with Docusaurus.`,
+      copyright: `Built with Docusaurus.`
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
+      darkTheme: prismThemes.dracula
+    }
+  } satisfies Preset.ThemeConfig
 };
 
 export default config;
